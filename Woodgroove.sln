@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Woodgroove", "Woodgroove\Woodgroove.csproj", "{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{CD393DD2-AC67-4425-BD7E-55B2416B4897}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7B9E97D0-E8BB-448D-80F7-75851A37B53F}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		Woodgroove.vsmdi = Woodgroove.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{46254442-5063-4EF9-A73E-11AC29E7491E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Woodgroove.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F5468360-4DB2-4659-A1E3-F1E3AA9493C1}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CD393DD2-AC67-4425-BD7E-55B2416B4897}.Release|x86.ActiveCfg = Release|Any CPU
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Debug|x86.ActiveCfg = Debug|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Debug|x86.Build.0 = Debug|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Release|Any CPU.ActiveCfg = Release|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Release|x86.ActiveCfg = Release|x86
+		{46254442-5063-4EF9-A73E-11AC29E7491E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
