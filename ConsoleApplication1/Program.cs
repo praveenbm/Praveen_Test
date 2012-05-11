@@ -41,7 +41,7 @@ namespace OverrideAndNew
 
         public virtual void ShowDetails()
         {
-            System.Console.WriteLine("Standard transportation Modified.");
+            System.Console.WriteLine("Standard transportation Modified. This is master branch.");
         }
     }
 
