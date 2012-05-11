@@ -41,7 +41,7 @@ namespace OverrideAndNew
 
         public virtual void ShowDetails()
         {
-            System.Console.WriteLine("Standard transportation.");
+            System.Console.WriteLine("Standard transportation Modified.");
         }
     }
 
