@@ -13,7 +13,7 @@ namespace EMCTest_Feature.EventReceiver1
     public class EventReceiver1 : SPListEventReceiver
     {
        /// <summary>
-       /// A list is being added.
+       /// A list is being added. Chumma added  commengt
        /// </summary>
        public override void ListAdding(SPListEventProperties properties)
        {
