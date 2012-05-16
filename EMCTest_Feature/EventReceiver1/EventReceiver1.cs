@@ -19,6 +19,7 @@ namespace EMCTest_Feature.EventReceiver1
        {
            // Praveen Added comment 
            base.ListAdding(properties);
+           //added comment Shiva
        }
 
 
