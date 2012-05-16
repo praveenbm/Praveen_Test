@@ -17,6 +17,7 @@ namespace EMCTest_Feature.EventReceiver1
        /// </summary>
        public override void ListAdding(SPListEventProperties properties)
        {
+           // Praveen Added comment
            base.ListAdding(properties);
        }
 
