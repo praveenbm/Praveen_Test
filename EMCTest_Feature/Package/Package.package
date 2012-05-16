@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="76dde22e-e0a6-4c63-8f3a-53b8d745be4b" solutionId="76dde22e-e0a6-4c63-8f3a-53b8d745be4b" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="EMCTest_Feature">
+    <features>
+        <featureReference itemId="8d1fc601-eea0-4c70-bf04-560c4188aa55" />
+    </features>
+</package>
