@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ApplicationHub" Url="_catalogs/masterpage">
+    <File Path="PageModule\ApplicationHub.Aspx" Url="ApplicationHub.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Applications Hub PageLayout"/>
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />      
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/Preview Images/searchpage.png, ~SiteCollection/_catalogs/masterpage/Preview Images/searchpage.png" />
+    </File>
+  </Module>
+  <Module Name="PageModule" Url="Pages">
+    <File Path="PageModule\Hub.aspx" Url="Hub.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Applications Hub"/>
+      <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/ApplicationHub.aspx, Applications Hub PageLayout"/>
+      <Property Name="ContentType" Value="$Resources:Microsoft.Office.Server.Search,contenttype_welcomepage_name;" />
+      <AllUsersWebPart WebPartZoneID="Body" WebPartOrder="1">
+      <![CDATA[<webParts>
+	<webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+		<metaData>
+			<type name="Microsoft.SharePoint.WebPartPages.DataFormWebPart, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+			<importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+		</metaData>
+		<data>
+			<properties>
+				<property name="InitialAsyncDataFetch" type="bool">False</property>
+				<property name="ChromeType" type="chrometype">None</property>
+				<property name="Title" type="string">ApplicationList</property>
+				<property name="Height" type="string" />
+				<property name="CacheXslStorage" type="bool">True</property>
+				<property name="XslLink" type="string" null="true" />
+				<property name="AllowZoneChange" type="bool">True</property>
+				<property name="AllowEdit" type="bool">True</property>
+				<property name="XmlDefinitionLink" type="string" />
+				<property name="DataFields" type="string">@ID,ID;@ContentType,Content Type;@Modified,Modified;@Created,Created;@Author,Created By;@Editor,Modified By;@_UIVersionString,Version;@Attachments,Attachments;@Title,Title;@File_x0020_Type,File Type;@FileLeafRef,Name (for use in forms);@FileDirRef,Path;@FSObjType,Item Type;@_HasCopyDestinations,Has Copy Destinations;@_CopySource,Copy Source;@ContentTypeId,Content Type ID;@_ModerationStatus,Approval Status;@_UIVersion,UI Version;@Created_x0020_Date,Created;@FileRef,URL Path;@ItemChildCount,Item Child Count;@FolderChildCount,Folder Child Count;@URL,URL;@Comments,Notes;@OpenInNewWindow,Open in New Window;</property>
+				<property name="AutoRefreshInterval" type="int">60</property>
+				<property name="NoDefaultStyle" type="string">TRUE</property>
+				<property name="ListDisplayName" type="string" null="true" />
+				<property name="AutoRefresh" type="bool">False</property>
+				<property name="ViewFlag" type="string">8</property>
+				<property name="ListUrl" type="string" null="true" />
+				<property name="AllowConnect" type="bool">True</property>
+				<property name="Description" type="string" />
+				<property name="AllowClose" type="bool">True</property>
+				<property name="ShowWithSampleData" type="bool">False</property>
+				<property name="ParameterBindings" type="string">
+	&lt;ParameterBinding Name="ListName" Location="None" DefaultValue="ApplicationList"/&gt;
+	&lt;ParameterBinding Name="dvt_apos" Location="Postback;Connection"/&gt;
+	&lt;ParameterBinding Name="ManualRefresh" Location="WPProperty[ManualRefresh]"/&gt;
+	&lt;ParameterBinding Name="UserID" Location="CAMLVariable" DefaultValue="CurrentUserName"/&gt;
+	&lt;ParameterBinding Name="Today" Location="CAMLVariable" DefaultValue="CurrentDate"/&gt;
+	&lt;ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue=""/&gt;
+</property>
+				<property name="Xsl" type="string">&lt;xsl:stylesheet xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:ddwrt2="urn:frontpage:internal"&gt;
+	&lt;xsl:output method="html" indent="no"/&gt;
+	&lt;xsl:decimal-format NaN=""/&gt;
+	&lt;xsl:param name="dvt_apos"&gt;'&lt;/xsl:param&gt;
+	&lt;xsl:param name="ManualRefresh"&gt;&lt;/xsl:param&gt;&lt;xsl:variable name="dvt_1_automode"&gt;0&lt;/xsl:variable&gt;
+	&lt;xsl:template match="/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls"&gt;
+		&lt;xsl:choose&gt;
+			&lt;xsl:when test="($ManualRefresh = 'True')"&gt;
+				&lt;table width="100%" border="0" cellpadding="0" cellspacing="0"&gt;
+					&lt;tr&gt;
+						&lt;td valign="top"&gt;
+							&lt;xsl:call-template name="dvt_1"/&gt;
+						&lt;/td&gt;
+						&lt;td width="1%" class="ms-vb" valign="top"&gt;
+							&lt;img src="/_layouts/images/staticrefresh.gif" id="ManualRefresh" border="0" onclick="javascript: {ddwrt:GenFireServerEvent('__cancel')}" alt="Click here to refresh the dataview."/&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/xsl:when&gt;
+			&lt;xsl:otherwise&gt;
+				&lt;xsl:call-template name="dvt_1"/&gt;
+			&lt;/xsl:otherwise&gt;
+		&lt;/xsl:choose&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="dvt_1.empty"&gt;
+		&lt;xsl:variable name="dvt_ViewEmptyText"&gt;There are no items to show in this view.&lt;/xsl:variable&gt;
+		&lt;table border="0" width="100%"&gt;
+			&lt;tr&gt;
+				&lt;td class="ms-vb"&gt;
+					&lt;xsl:value-of select="$dvt_ViewEmptyText"/&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="dvt_1"&gt;
+		&lt;xsl:variable name="dvt_StyleName"&gt;2ColFrm&lt;/xsl:variable&gt;
+		&lt;xsl:variable name="Rows" select="/dsQueryResponse/Rows/Row" /&gt;
+		&lt;xsl:variable name="dvt_RowCount" select="count($Rows)" /&gt;
+		&lt;xsl:variable name="dvt_IsEmpty" select="$dvt_RowCount = 0" /&gt;
+		&lt;xsl:choose&gt;
+			&lt;xsl:when test="$dvt_IsEmpty"&gt;
+				&lt;xsl:call-template name="dvt_1.empty" /&gt;
+			&lt;/xsl:when&gt;
+			&lt;xsl:otherwise&gt;
+				&lt;table border="0" width="100%"&gt;
+					&lt;tr&gt;
+						&lt;xsl:call-template name="dvt_1.body"&gt;
+							&lt;xsl:with-param name="Rows" select="$Rows" /&gt;
+						&lt;/xsl:call-template&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/xsl:otherwise&gt;
+		&lt;/xsl:choose&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="dvt_1.body"&gt;
+		&lt;xsl:param name="Rows" /&gt;
+		&lt;xsl:for-each select="$Rows"&gt;
+			&lt;xsl:call-template name="dvt_1.rowview" /&gt;
+		&lt;/xsl:for-each&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template name="dvt_1.rowview"&gt;
+		&lt;td valign="top" width="50%"&gt;
+			&lt;table border="0" cellspacing="0" width="100%"&gt;
+				&lt;tr&gt;
+					
+					&lt;td width="75%" class="ms-vb"&gt;
+					
+					&lt;a&gt;
+					&lt;xsl:if test="@OpenInNewWindow= 'Yes'"&gt; 
+						&lt;xsl:attribute name="target"&gt;_blank&lt;/xsl:attribute&gt;
+					&lt;/xsl:if&gt; 					
+					&lt;xsl:attribute name="href"&gt;
+					&lt;xsl:value-of select="@URLwMenu"/&gt;
+					&lt;/xsl:attribute&gt;
+					&lt;span class="style6"&gt;&lt;strong&gt;&lt;xsl:value-of select="@URL.desc" /&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;
+					&lt;span class="style6"&gt;&lt;br /&gt;&lt;xsl:value-of select="@Comments" /&gt;&lt;/span&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;xsl:if test="$dvt_1_automode = '1'" ddwrt:cf_ignore="1"&gt;
+					&lt;tr&gt;
+						&lt;td colspan="99" class="ms-vb"&gt;
+							&lt;span ddwrt:amkeyfield="ID" ddwrt:amkeyvalue="ddwrt:EscapeDelims(string(@ID))" ddwrt:ammode="view" /&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/xsl:if&gt;
+			&lt;/table&gt;
+		&lt;/td&gt;
+		&lt;xsl:if test="position() mod 2 = 0" ddwrt:cf_ignore="1"&gt;
+			&lt;xsl:text disable-output-escaping="yes"&gt;&amp;lt;/tr&amp;gt;&lt;/xsl:text&gt;
+			&lt;xsl:if test="position() != last()" ddwrt:cf_ignore="1"&gt;
+				&lt;xsl:text disable-output-escaping="yes"&gt;&amp;lt;tr&amp;gt;&lt;/xsl:text&gt;
+			&lt;/xsl:if&gt;
+		&lt;/xsl:if&gt;
+		&lt;xsl:if test="position() = last()" ddwrt:cf_ignore="1"&gt;
+			&lt;xsl:if test="position() mod 2 != 0" ddwrt:cf_ignore="1"&gt;
+				&lt;td&gt;
+					&lt;xsl:text disable-output-escaping="yes" ddwrt:nbsp-preserve="yes" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime"&gt;&amp;amp;nbsp;&lt;/xsl:text&gt;
+					
+				&lt;/td&gt;
+			&lt;/xsl:if&gt;
+		&lt;/xsl:if&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</property>
+				<property name="CacheXslTimeOut" type="int">86400</property>
+				<property name="Hidden" type="bool">False</property>
+        <property name="DataSourceID" type="string" />
+				<property name="FireInitialRow" type="bool">True</property>
+				<property name="ManualRefresh" type="bool">False</property>
+				<property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">Hidden</property>
+				<property name="ChromeState" type="chromestate">Normal</property>
+				<property name="AllowHide" type="bool">True</property>
+				<property name="PageSize" type="int">10</property>
+				<property name="SampleData" type="string" null="true" />
+				<property name="AsyncRefresh" type="bool">False</property>
+				<property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="UseSQLDataSourcePaging" type="bool">True</property>
+				<property name="AllowMinimize" type="bool">True</property>
+				<property name="TitleUrl" type="string" />
+				<property name="CatalogIconImageUrl" type="string" />
+				<property name="DataSourcesString" type="string">&lt;%@ Register TagPrefix="cc1" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;%@ Register TagPrefix="cc2" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %&gt;&lt;cc1:SPDataSource runat="server" UseInternalName="True" SelectCommand="&amp;lt;View&amp;gt;&amp;lt;Query&amp;gt;&amp;lt;OrderBy&amp;gt;&amp;lt;FieldRef Name=&amp;quot;URL&amp;quot; Ascending=&amp;quot;TRUE&amp;quot;/&amp;gt;&amp;lt;/OrderBy&amp;gt;&amp;lt;/Query&amp;gt;&amp;lt;/View&amp;gt;" ID="dataformwebpart1" InsertCommand="" UseServerDataFormat="True" DataSourceMode="List" UpdateCommand="" DeleteCommand=""&gt;&lt;UpdateParameters&gt;
+&lt;cc2:DataFormParameter ParameterKey="ListName" PropertyName="ParameterValues" DefaultValue="ApplicationList" Name="ListName"&gt;&lt;/cc2:DataFormParameter&gt;
+&lt;/UpdateParameters&gt;
+&lt;InsertParameters&gt;
+&lt;cc2:DataFormParameter ParameterKey="ListName" PropertyName="ParameterValues" DefaultValue="ApplicationList" Name="ListName"&gt;&lt;/cc2:DataFormParameter&gt;
+&lt;/InsertParameters&gt;
+&lt;DeleteParameters&gt;
+&lt;cc2:DataFormParameter ParameterKey="ListName" PropertyName="ParameterValues" DefaultValue="ApplicationList" Name="ListName"&gt;&lt;/cc2:DataFormParameter&gt;
+&lt;/DeleteParameters&gt;
+&lt;SelectParameters&gt;
+&lt;cc2:DataFormParameter ParameterKey="ListName" PropertyName="ParameterValues" DefaultValue="ApplicationList" Name="ListName"&gt;&lt;/cc2:DataFormParameter&gt;
+&lt;asp:Parameter DefaultValue="0" Name="StartRowIndex"&gt;&lt;/asp:Parameter&gt;
+&lt;asp:Parameter DefaultValue="0" Name="nextpagedata"&gt;&lt;/asp:Parameter&gt;
+&lt;asp:Parameter DefaultValue="10" Name="MaximumRows"&gt;&lt;/asp:Parameter&gt;
+&lt;/SelectParameters&gt;
+&lt;/cc1:SPDataSource&gt;
+</property>
+				<property name="DisplayName" type="string" />
+				<property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">PAGE_NORMALVIEW</property>
+				<property name="Width" type="string" />
+				<property name="ExportMode" type="exportmode">All</property>
+				<property name="Direction" type="direction">NotSet</property>
+				<property name="ViewContentTypeId" type="string" />
+				<property name="HelpUrl" type="string" />
+				<property name="XmlDefinition" type="string" />
+				<property name="Default" type="string" />
+				<property name="TitleIconImageUrl" type="string" />
+				<property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+			</properties>
+		</data>
+	</webPart>
+</webParts>]]>     
+    </AllUsersWebPart>
+    </File>  
+</Module>
+</Elements>

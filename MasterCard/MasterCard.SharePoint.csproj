@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{034E52B6-7AC3-4DA7-BAF9-C9E02CC4D111}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MasterCard</RootNamespace>
+    <AssemblyName>MasterCard</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MasterCardkey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\ListDefinitions\ListDefinitions.feature">
+      <FeatureId>{4d01203e-87f1-47d8-9101-968215ecaa0f}</FeatureId>
+    </None>
+    <None Include="ListDefinition.Applications\ListInstance.Applications\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c82f61a-09c5-426c-8424-f821737bf1ef}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinition.Applications\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8098089c-e32c-449d-b93f-94fe8866df28}</SharePointProjectItemId>
+    </None>
+    <None Include="MasterCardkey.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{2354dceb-37d4-4f51-ad4f-a663bc4f9ace}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PageModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9b3f2edb-cebc-4d16-9148-d26936b40b08}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\ListDefinitions\ListDefinitions.Template.xml">
+      <DependentUpon>ListDefinitions.feature</DependentUpon>
+    </Content>
+    <Content Include="ListDefinition.Applications\Elements.xml" />
+    <Content Include="ListDefinition.Applications\ListInstance.Applications\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListDefinition.Applications\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PageModule\ApplicationHub.Aspx" />
+    <Content Include="PageModule\Elements.xml" />
+    <Content Include="PageModule\Hub.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

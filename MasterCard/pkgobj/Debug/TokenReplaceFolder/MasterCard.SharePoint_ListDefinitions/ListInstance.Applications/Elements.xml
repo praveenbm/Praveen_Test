@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Applications"
+                OnQuickLaunch="FALSE"
+                TemplateType="11201"
+                Url="Lists/Applications"
+                Description="Applications List for storing external applications">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="OpenInNewWindow">1</Field>
+          <Field Name ="URL">http://www.google.com, Google</Field>
+
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

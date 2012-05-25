@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2354dceb-37d4-4f51-ad4f-a663bc4f9ace" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="MasterCard.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="MasterCard.SharePoint_ListDefinitions\Feature.xml" />
+  </FeatureManifests>
+</Solution>

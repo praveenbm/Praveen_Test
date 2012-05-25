@@ -1,0 +1,17 @@
+C:\MasterCard.Source\MasterCard\MasterCard\bin\Debug\MasterCard.dll
+C:\MasterCard.Source\MasterCard\MasterCard\bin\Debug\MasterCard.pdb
+C:\MasterCard.Source\MasterCard\MasterCard\obj\Debug\ResolveAssemblyReference.cache
+C:\MasterCard.Source\MasterCard\MasterCard\obj\Debug\MasterCard.dll
+C:\MasterCard.Source\MasterCard\MasterCard\obj\Debug\MasterCard.pdb
+C:\Users\bisarp\Desktop\MC\Work\MasterCard\bin\Debug\MasterCard.dll
+C:\Users\bisarp\Desktop\MC\Work\MasterCard\bin\Debug\MasterCard.pdb
+C:\Users\bisarp\Desktop\MC\Work\MasterCard\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\bisarp\Desktop\MC\Work\MasterCard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bisarp\Desktop\MC\Work\MasterCard\obj\Debug\MasterCard.dll
+C:\Users\bisarp\Desktop\MC\Work\MasterCard\obj\Debug\MasterCard.pdb
+C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\bin\Debug\MasterCard.dll
+C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\bin\Debug\MasterCard.pdb
+C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\obj\Debug\MasterCard.dll
+C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\obj\Debug\MasterCard.pdb

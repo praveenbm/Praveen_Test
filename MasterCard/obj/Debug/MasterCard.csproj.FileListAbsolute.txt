@@ -1,0 +1,5 @@
+C:\MasterCard.Source\MasterCard\MasterCard\bin\Debug\MasterCard.dll
+C:\MasterCard.Source\MasterCard\MasterCard\bin\Debug\MasterCard.pdb
+C:\MasterCard.Source\MasterCard\MasterCard\obj\Debug\ResolveAssemblyReference.cache
+C:\MasterCard.Source\MasterCard\MasterCard\obj\Debug\MasterCard.dll
+C:\MasterCard.Source\MasterCard\MasterCard\obj\Debug\MasterCard.pdb
