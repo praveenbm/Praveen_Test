@@ -4,13 +4,13 @@
                 OnQuickLaunch="FALSE"
                 TemplateType="11201"
                 Url="Lists/Applications"
-                Description="Applications List for storing external applications">
+                Description="This list stores application details such as URL and description. Application hub landing page displays information reading this list.">
     <Data>
       <Rows>
         <Row>
-          <Field Name="OpenInNewWindow">1</Field>
-          <Field Name ="URL">http://www.google.com, Google</Field>
-
+          <Field Name="OpenInNewWindow">0</Field>
+          <Field Name ="URL">http://www.mastercard.com, MasterCard</Field>
+          <Field Name ="Note">Description for MasterCard</Field>
         </Row>
       </Rows>
     </Data>

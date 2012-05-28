@@ -9,6 +9,6 @@
         SecurityBits="11"
         Sequence="310"
         DisplayName="ListDefinition.Applications"
-        Description="List Definition for Applications list."
+        Description="Use this list to store information about applications to be displayed on application hub landing page."
         Image="/_layouts/images/itlink.png"/>
 </Elements>
