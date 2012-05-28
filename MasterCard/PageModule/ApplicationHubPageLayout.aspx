@@ -25,13 +25,13 @@
 </ZoneTemplate></WebPartPages:WebPartZone>
 	</asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderTitleBreadcrumb" runat="server"> 
-	<SharePointWebControls:VersionedPlaceHolder UIVersion="3" runat="server"> 
+	<!--<SharePointWebControls:VersionedPlaceHolder UIVersion="3" runat="server"> 
 	</SharePointWebControls:VersionedPlaceHolder>
 	<ContentTemplate> 
 	<SharePointWebControls:UIVersionedContent UIVersion="4" runat="server"> 
 	</SharePointWebControls:UIVersionedContent>
 	<ContentTemplate> 
-	<SharePointWebControls:ListSiteMapPath runat="server" SiteMapProviders="CurrentNavigation" RenderCurrentNodeAsLink="false" PathSeparator="" CssClass="s4-breadcrumb" NodeStyle-CssClass="s4-breadcrumbNode" CurrentNodeStyle-CssClass="s4-breadcrumbCurrentNode" RootNodeStyle-CssClass="s4-breadcrumbRootNode" NodeImageOffsetX=0 NodeImageOffsetY=353 NodeImageWidth=16 NodeImageHeight=16 NodeImageUrl="/_layouts/images/fgimg.png" HideInteriorRootNodes="true" SkipLinkText=""/> </ContentTemplate>
+	<SharePointWebControls:ListSiteMapPath runat="server" SiteMapProviders="CurrentNavigation" RenderCurrentNodeAsLink="false" PathSeparator="" CssClass="s4-breadcrumb" NodeStyle-CssClass="s4-breadcrumbNode" CurrentNodeStyle-CssClass="s4-breadcrumbCurrentNode" RootNodeStyle-CssClass="s4-breadcrumbRootNode" NodeImageOffsetX=0 NodeImageOffsetY=353 NodeImageWidth=16 NodeImageHeight=16 NodeImageUrl="/_layouts/images/fgimg.png" HideInteriorRootNodes="true" SkipLinkText=""/> </ContentTemplate>-->
      </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageDescription" runat="server">
 	<SharePointWebControls:ProjectProperty Property="Description" runat="server"/>
