@@ -15,3 +15,9 @@ C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\bin\Debug\Microsoft.Sharepoint
 C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\obj\Debug\MasterCard.dll
 C:\Users\bisarp\Desktop\MC\Work\MasterCard - Copy\obj\Debug\MasterCard.pdb
+C:\Users\shyavs\Documents\PraveenTest\MasterCard\bin\Debug\MasterCard.dll
+C:\Users\shyavs\Documents\PraveenTest\MasterCard\bin\Debug\MasterCard.pdb
+C:\Users\shyavs\Documents\PraveenTest\MasterCard\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\shyavs\Documents\PraveenTest\MasterCard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\shyavs\Documents\PraveenTest\MasterCard\obj\Debug\MasterCard.dll
+C:\Users\shyavs\Documents\PraveenTest\MasterCard\obj\Debug\MasterCard.pdb

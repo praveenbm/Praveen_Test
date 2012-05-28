@@ -13,14 +13,7 @@
 	</script>
 	<SharePoint:UIVersionedContent ID="WebPartPageHideQLStyles" UIVersion="4" runat="server">
 		<ContentTemplate>
-<style type="text/css">
-body #s4-leftpanel {
-	display:none;
-}
-.s4-ca {
-	margin-left:0px;
-}
-</style>
+
 		</ContentTemplate>
 	</SharePoint:UIVersionedContent>	
 	</asp:Content>
@@ -28,18 +21,17 @@ body #s4-leftpanel {
     <SharePoint:ListItemProperty Property="BaseName" maxlength="40" runat="server"/>
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageTitleInTitleArea" runat="server">
-	<WebPartPages:WebPartZone runat="server" title="loc:TitleBar" id="TitleBar" AllowLayoutChange="false" AllowPersonalization="false"><ZoneTemplate>
-	<WebPartPages:TitleBarWebPart runat="server" AllowEdit="True" AllowConnect="True" ConnectionID="00000000-0000-0000-0000-000000000000" Title="Web Part Page Title Bar" IsIncluded="True" Dir="Default" IsVisible="True" AllowMinimize="False" ExportControlledProperties="True" ZoneID="TitleBar" ID="g_ec4de923_3ceb_4deb_ba28_fbb9e97e51fa" HeaderTitle="Hub" AllowClose="False" FrameState="Normal" ExportMode="All" AllowRemove="False" AllowHide="True" SuppressWebPartChrome="False" DetailLink="" ChromeType="None" HelpLink="" MissingAssembly="Cannot import this Web Part." PartImageSmall="" HelpMode="Modeless" FrameType="None" AllowZoneChange="True" PartOrder="2" Description="" PartImageLarge="" IsIncludedFilter="" __MarkupType="vsattributemarkup" __WebPartId="{EC4DE923-3CEB-4DEB-BA28-FBB9E97E51FA}" WebPart="true" Height="" Width=""></WebPartPages:TitleBarWebPart>
+	<WebPartPages:WebPartZone runat="server" title="loc:TitleBar" id="TitleBar" AllowLayoutChange="false" AllowPersonalization="false"><ZoneTemplate>	
 </ZoneTemplate></WebPartPages:WebPartZone>
 	</asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderTitleBreadcrumb" runat="server"> 
-	<!--<SharePointWebControls:VersionedPlaceHolder UIVersion="3" runat="server"> 
+	<SharePointWebControls:VersionedPlaceHolder UIVersion="3" runat="server"> 
 	</SharePointWebControls:VersionedPlaceHolder>
 	<ContentTemplate> 
 	<SharePointWebControls:UIVersionedContent UIVersion="4" runat="server"> 
 	</SharePointWebControls:UIVersionedContent>
 	<ContentTemplate> 
-	<SharePointWebControls:ListSiteMapPath runat="server" SiteMapProviders="CurrentNavigation" RenderCurrentNodeAsLink="false" PathSeparator="" CssClass="s4-breadcrumb" NodeStyle-CssClass="s4-breadcrumbNode" CurrentNodeStyle-CssClass="s4-breadcrumbCurrentNode" RootNodeStyle-CssClass="s4-breadcrumbRootNode" NodeImageOffsetX=0 NodeImageOffsetY=353 NodeImageWidth=16 NodeImageHeight=16 NodeImageUrl="/_layouts/images/fgimg.png" HideInteriorRootNodes="true" SkipLinkText=""/> </ContentTemplate>-->
+	<SharePointWebControls:ListSiteMapPath runat="server" SiteMapProviders="CurrentNavigation" RenderCurrentNodeAsLink="false" PathSeparator="" CssClass="s4-breadcrumb" NodeStyle-CssClass="s4-breadcrumbNode" CurrentNodeStyle-CssClass="s4-breadcrumbCurrentNode" RootNodeStyle-CssClass="s4-breadcrumbRootNode" NodeImageOffsetX=0 NodeImageOffsetY=353 NodeImageWidth=16 NodeImageHeight=16 NodeImageUrl="/_layouts/images/fgimg.png" HideInteriorRootNodes="true" SkipLinkText=""/> </ContentTemplate>
      </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageDescription" runat="server">
 	<SharePointWebControls:ProjectProperty Property="Description" runat="server"/>
