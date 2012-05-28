@@ -88,9 +88,9 @@
     <Content Include="ListDefinition.Applications\Schema.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="PageModule\ApplicationHub.Aspx" />
+    <Content Include="PageModule\ApplicationHubPage.aspx" />
     <Content Include="PageModule\Elements.xml" />
-    <Content Include="PageModule\Hub.aspx" />
+    <Content Include="PageModule\ApplicationHubPageLayout.aspx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />

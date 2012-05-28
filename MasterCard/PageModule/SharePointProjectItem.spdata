@@ -2,7 +2,7 @@
 <ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="PageModule\" Type="ElementManifest" />
-    <ProjectItemFile Source="ApplicationHub.Aspx" Target="PageModule\" Type="ElementFile" />
-    <ProjectItemFile Source="Hub.aspx" Target="PageModule\" Type="ElementFile" />    
+    <ProjectItemFile Source="ApplicationHubPageLayout.aspx" Target="PageModule\" Type="ElementFile" />
+    <ProjectItemFile Source="ApplicationHubPage.aspx" Target="PageModule\" Type="ElementFile" />
   </Files>
 </ProjectItem>
